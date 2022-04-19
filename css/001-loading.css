@@ -13,33 +13,29 @@ div {
   display: inline-block;
   margin: 1px;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: scaling 1s infinite;
+  animation: scaling 1s ease-in-out infinite;
 }
 
 @keyframes scaling {
-  0%, 100% {
-    transform: scaleY(1);
-  }
-  50% {
+  from {
     transform: scaleY(2);
+  } to {
+    transform: scaleY(1);
   }
 }
 
-div:nth-child(0) {
-  animation-delay: 0
-}
 div:nth-child(1) {
-  animation-delay: .2s
+  animation-delay: 0s;
 }
 div:nth-child(2) {
-  animation-delay: .4s
+  animation-delay: .15s
 }
 div:nth-child(3) {
-  animation-delay: .6s
+  animation-delay: .3s
 }
 div:nth-child(4) {
-  animation-delay: .8s
+  animation-delay: .45s;
 }
 div:nth-child(5) {
-  animation-delay: 1s
+  animation-delay: .6s;
 }
